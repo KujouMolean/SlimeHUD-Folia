@@ -40,8 +40,8 @@ public class WAILAManager implements Listener {
         if (!wailas.containsKey(player.getUniqueId())) {
             waila = new PlayerWAILA(player);
             waila.runTaskTimer(
-                    SlimeHUD.getInstance(),
-                    0l,
+                    SlimeHUD.getInstance(), player,
+                    1L,
                     SlimeHUD.getInstance().getConfig().getLong("waila.tick-rate"));
             wailas.put(player.getUniqueId(), waila);
         } else {
