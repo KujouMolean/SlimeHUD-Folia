@@ -85,6 +85,14 @@
                             </excludes>
                         </filter>
                     </filters>
+                    <artifactSet>
+                        <includes>
+                            <include>org.bstats:bstats-bukkit</include>
+                            <include>org.bstats:bstats-base</include>
+                            <include>io.github.mooy1:InfinityLib</include>
+                            <include>net.guizhanss:SlimefunTranslation</include>
+                        </includes>
+                    </artifactSet>
                 </configuration>
                 <executions>
                     <execution>
@@ -100,10 +108,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.19-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.21.5-R0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
